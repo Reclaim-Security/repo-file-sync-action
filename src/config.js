@@ -127,6 +127,11 @@ try {
 			key: 'FORK',
 			default: false,
 			disableable: true
+		}),
+		FLAT_BRANCH_NAME: getInput({
+			key: 'FLAT_BRANCH_NAME',
+			type: 'boolean',
+			default: false
 		})
 	}
 

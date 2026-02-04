@@ -96,6 +96,10 @@ inputs:
       Specify the user account that will be used in a fork and pull-request workflow. Defaults
       false.
     required: false
+  FLAT_BRANCH_NAME:
+    description: |
+      Replace slashes with dashes in the PR branch name. Useful when branch names are used in contexts that don't support slashes (e.g., Docker tags). Defaults to false
+    required: false
 
 outputs:
   pull_request_urls:
